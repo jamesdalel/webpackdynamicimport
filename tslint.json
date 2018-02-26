@@ -1,0 +1,79 @@
+{
+    "extends": [
+      "tslint:latest",
+      "tslint-plugin-prettier",
+      "tslint-config-prettier"
+    ],
+    "rules": {
+      "comment-format": [
+        true,
+        "check-space",
+        "check-lowercase",
+        {
+          "ignore-words": ["TODO", "HACK"]
+        }
+      ],
+      "interface-name": false,
+      "member-ordering": [
+        true,
+        {
+          "order": [
+            "public-static-field",
+            "public-instance-field",
+            "public-constructor",
+            "private-static-field",
+            "private-instance-field",
+            "private-constructor",
+            "public-instance-method",
+            "protected-instance-method",
+            "private-instance-method"
+          ]
+        }
+      ],
+      "no-any": false,
+      "no-implicit-dependencies": false,
+      "no-internal-module": false,
+      "no-invalid-template-strings": false,
+      "no-namespace": false,
+      "no-require-imports": false,
+      "no-submodule-imports": {
+        "options": [
+          "admit",
+          "thirdParty"
+        ]
+      },
+      "no-switch-case-fall-through": true,
+      "no-unused-variable": true,
+      "no-use-before-declare": true,
+      "no-var-requires": false,
+      "object-literal-sort-keys": [
+        true,
+        "ignore-case",
+        "shorthand-first"
+      ],
+      "prettier": [
+        true,
+        {
+          "printWidth": 100,
+          "singleQuote": true,
+          "semi": true,
+          "tabWidth": 4,
+          "trailingComma": "all"
+        }
+      ],
+      "switch-default": true,
+      "typedef": [
+        true,
+        "call-signature",
+        "parameter",
+        "property-declaration",
+        "member-variable-declaration"
+      ],
+      "use-strict": [
+        false,
+        "check-module",
+        "check-function"
+      ]
+    }
+  }
+  

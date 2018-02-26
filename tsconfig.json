@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "allowUnreachableCode": true,
+        "module": "amd",
+        "target": "es5",
+        "baseUrl": "./src",
+        "sourceMap": true,
+        "lib": ["es2015",  "dom"],
+
+    },
+    "exclude": [
+        "node_modules"
+    ]
+
+}
